@@ -4,7 +4,7 @@ const endInput = document.getElementById('endDate');
 const getImagesBtn = document.querySelector('.filters button');
 const gallery = document.getElementById('gallery');
 
-// Your NASA API key
+// NASA API key
 const apiKey = 'fH0gQlXzcluVyPNwQpi46Yf8h10cLFZ8v3JU8sEs';
 
 // Call the setupDateInputs function from dateRange.js
@@ -50,7 +50,7 @@ getImagesBtn.addEventListener('click', () => {
         return;
       }
 
-      // This function shows a simple modal with the photo explanation
+      // Simple modal with the photo explanation
       function showModal(title, explanation) {
         // Create a background overlay
         const modalBg = document.createElement('div');
@@ -65,12 +65,12 @@ getImagesBtn.addEventListener('click', () => {
         modalTitle.textContent = title;
         modalBox.appendChild(modalTitle);
 
-        // Add the explanation text
+        // Explanation text
         const modalText = document.createElement('p');
         modalText.textContent = explanation;
         modalBox.appendChild(modalText);
 
-        // Add a close button
+        // Close button
         const closeBtn = document.createElement('button');
         closeBtn.textContent = 'Close';
         closeBtn.addEventListener('click', () => {
